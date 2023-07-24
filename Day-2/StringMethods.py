@@ -109,6 +109,7 @@ print(v.split(",",1))
 
 #split
 w="circle round rectangle"
+print("split method")
 print(w.split()) #default separator is whitespace
 print(w.split(" ",1))
 
