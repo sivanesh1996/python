@@ -1,3 +1,5 @@
+import sys
+
 try:
  print(x)
 except:
@@ -42,27 +44,37 @@ try:
  print(x/y)
 except (ZeroDivisionError,ValueError) as msg:
  print(msg)
+finally:
+ print("Check finally")
+ '''
  
- 
-
+'''
 file=open("/media/sivanesh/84567A75567A67B6/Python/Day-12/pincodes.txt")
 #print(file.readline(),end='')
 
 for each_line in file:
  print(each_line,end='')
 file.close()
+'''
+'''
+try:
+ file=open("/media/sivanesh/84567A75567A67B6/Python/Day-12/pincodes.txt")
+ for each_line in file:
+  try:
+   (city,pincode)=each_line.split("-")
+   print('pincode of',city,end='')
+   print('is',pincode,end='')
+  except ValueError:
+   print('Check split')
 
-
-file=open("/media/sivanesh/84567A75567A67B6/Python/Day-12/pincodes.txt")
-for each_line in file:
- (city,pincode)=each_line.split("-")
- print('pincode of',city,end='')
- print('is',pincode,end='')
-file.close()
-
+ file.close()
+except:
+ print('please check file location')
 
 '''
 
+
+'''
 def get_number():
  number=int(input("Enter PIN number"))
  return number
@@ -75,3 +87,20 @@ while True:
         break
  except ValueError:
         print("Please enter valid PIN no.")
+ except:
+        print("Please check some other issues")
+
+'''
+print('\nHandling List')
+inputList=['a',0,2,8,10,False]
+
+for entry in inputList:
+    try:
+        print("The entry is",entry)
+        r=1/int(entry)
+        break
+    except:
+        print("Oops!",sys.exc_info() [1], "occurred")
+        print("Next entry.")
+        print()
+print("The reciprocal of ",entry,"is",r)
