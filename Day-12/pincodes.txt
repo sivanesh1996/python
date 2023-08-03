@@ -1,0 +1,11 @@
+Chennai - 600001
+Ariyalur - 621001 
+Madurai - 625001 
+Tirunelveli - 627001 
+Coimbatore - 641001 
+Kanyakumari - 629001 
+(Other States) 
+Hyderabad - 500001 
+Mumbai - 400001 
+Pune - 411001
+
