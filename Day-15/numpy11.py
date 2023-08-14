@@ -1,7 +1,7 @@
 import numpy as np
 from numpy import random
 
-#random is an external module in numpy, so we must import
+#random is an external module in numpy, so we must import additionally
 
 #shuffle()
 
